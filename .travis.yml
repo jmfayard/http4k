@@ -33,8 +33,8 @@ matrix:
       language: java
       jdk: oraclejdk8
       script:
-      - "./release-api.sh"
+      - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then ./release-api.sh; fi'
     - stage: maven central
       if: branch = master
-      script: "travis_wait 90 ./release-maven-central.sh"
+      - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then travis_wait 90 ./release-maven-central.s; fi'
       language: bash

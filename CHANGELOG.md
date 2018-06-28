@@ -6,7 +6,7 @@ This list is not currently intended to be all-encompassing - it will document ma
 - Added first cut of `http4-testing-chaos` module. Massive H/T to @IgorPerikov for the PR which drove this module's creation. API might change a bit as we experiment/expand it.
 
 ### v3.32.0
-- Add support for propagation of the Zipkin x-b3-sampled header
+- Add support for propagation of the Zipkin x-b3-sampled header. H/T @jshiell for the PR.
 
 ### v3.31.0
 - Changes to the Netty factory to enable running http4k on GraalVM. H/T @RichyHBM
